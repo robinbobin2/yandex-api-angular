@@ -1,0 +1,6 @@
+<p>
+  <a *ngIf="!access_token" [href]="[link]" class="btn btn-primary">Разрешить доступ</a>
+</p>
+<div class="row" *ngIf="items">
+  <app-item class="col-md-auto" *ngFor="let item of items" [item]="item"></app-item>
+</div>

@@ -1,0 +1,4 @@
+<a [routerLink]="item.type=='dir' ? ['/folder', item.name] : ''">
+  <img style="display: block; margin: 3px auto;" [attr.src]="[item.file ? '../../assets/document.png' : '../../assets/folder.png']" />
+  <small style="text-align: center; display: block;">{{item.name}} <span *ngIf="item.size"><br>({{item.size}}B)</span></small>
+</a>
